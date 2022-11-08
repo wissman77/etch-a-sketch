@@ -4,9 +4,26 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(170, 170, 248);
+}
+
 main {
   width: 900px;
   margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.change-gird {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background: rgb(129, 162, 233);
+  border: 1px solid rgb(77, 77, 250);
+  border-radius: 10px;
 }
 
 .container {
@@ -14,6 +31,7 @@ main {
   height: 500px;
   border: 1px solid gray;
   margin: auto;
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
