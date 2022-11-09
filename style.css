@@ -43,3 +43,7 @@ main {
   border: 1px solid gray;
   margin: 0;
 }
+
+.black {
+  background-color: #000;
+}
