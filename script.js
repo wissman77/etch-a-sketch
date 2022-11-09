@@ -35,5 +35,5 @@ function produceDivs(squaresNumber, parentNode){
 }
 
 function changeBackground(event) {
-  event.target.style.background = 'black';
+  event.target.classList.add('black');
 }
