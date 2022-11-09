@@ -5,15 +5,13 @@ let squaresNumber = 16
 let elementHightAndWidth = 100/squaresNumber;
 
 // creating the grid and add event listeners to div elements
-for(let i = 0; i < squaresNumber; i++) {
-  for(let j = 0; j < squaresNumber; j++) {
-    const div = document.createElement('div');
+for(let i = 0; i < squaresNumber ** 2; i++) {
+  const div = document.createElement('div');
     div.classList.add('element')
     div.style.width = `${elementHightAndWidth}%`;
     div.addEventListener('mouseenter', changeBackground);
     div.style.height = `${elementHightAndWidth}%`;
     conatiner.appendChild(div);
-  }
 }
 
 function changeBackground(event) {
