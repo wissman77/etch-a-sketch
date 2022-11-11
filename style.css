@@ -18,7 +18,7 @@ main {
   align-items: center;
 }
 
-.change-gird {
+.btn {
   margin-bottom: 10px;
   padding: 10px 20px;
   font-weight: bold;
@@ -42,6 +42,7 @@ main {
 .element {
   border: 1px solid gray;
   margin: 0;
+  border-collapse: collapse;
 }
 
 .black {
