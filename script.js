@@ -7,7 +7,7 @@ const blackShadesBtn = document.getElementById('black-shades-btn');
 
 let squaresNumber = 16
 
-
+// Iinitial state 16 squares with a black background
 produceDivs(squaresNumber, conatiner, changeToBlack);
 
 // Events listeners
