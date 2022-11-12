@@ -13,6 +13,9 @@ produceDivs(squaresNumber, conatiner, changeToBlack);
 // Events listeners
 changeGridBtn.addEventListener('click', () => {
   squaresNumber = parseInt(prompt('What is the number of squares per side?'));
+  if (!squaresNumber) {
+    squaresNumber = 16;
+  }
   if (squaresNumber > 100 || squaresNumber < 2) {
     alert('Please provide a number between 2 and 100');
     return;
@@ -69,7 +72,7 @@ function produceDivs(squaresNumber, parentNode, func){
       div.style.width = `${elementHightAndWidth}%`;
       div.addEventListener('mouseenter', func);
       div.style.height = `${elementHightAndWidth}%`;
-      div.style.opacity = 0.1;
+      div.style.opacity = 1;
       parentNode.appendChild(div);
   }
 }
@@ -90,8 +93,8 @@ function changeToRandomRGB(event) {
 function changeToBlackShades(event) {
   let opacity =  parseFloat(event.target.style.opacity);
   opacity += 0.1;
-  if (opacity > 1) {
-    return;
+  if (opacity >= 1) {
+    opacity = 0.1;
   }
   event.target.style.opacity = opacity; 
   event.target.style.background = `rgb(0, 0, 0)`;
