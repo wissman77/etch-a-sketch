@@ -27,6 +27,12 @@ main {
   border-radius: 10px;
 }
 
+.btn:hover {
+  background: rgb(77, 77, 250);
+  border: 1px solid rgb(129, 162, 233);
+  box-shadow: 2px 2px 2px 2px rgb(202, 240, 245);
+}
+
 .container {
   width: 500px;
   height: 500px;
