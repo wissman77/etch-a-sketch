@@ -79,7 +79,7 @@ function produceDivs(squaresNumber, parentNode, func){
 
 function changeToBlack(event) {
   event.target.style.opacity = 1;
-  event.target.classList.add('black');
+  event.target.style.background = 'rgb(0, 0, 0)';
 }
 
 function changeToRandomRGB(event) {
