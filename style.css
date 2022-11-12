@@ -28,15 +28,15 @@ main {
   margin-bottom: 10px;
   padding: 10px 20px;
   font-weight: bold;
-  background: rgb(129, 162, 233);
-  border: 1px solid rgb(77, 77, 250);
+  background: rgb(98, 136, 219);
+  border: 0;
   border-radius: 10px;
 }
 
 .btn:hover {
   background: rgb(77, 77, 250);
-  border: 1px solid rgb(129, 162, 233);
   box-shadow: 2px 2px 2px 2px rgb(202, 240, 245);
+  color: rgb(202, 240, 245);
 }
 
 .container {
@@ -55,8 +55,4 @@ main {
   border: 1px solid rgba(168, 167, 167, 0.322);
   margin: 0;
   border-collapse: collapse;
-}
-
-.black {
-  background-color: #000;
 }
