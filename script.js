@@ -22,23 +22,40 @@ changeGridBtn.addEventListener('click', () => {
 });
 
 blackBtn.addEventListener('click', () => {
-  clearContainer();
-  produceDivs(squaresNumber, conatiner, changeToBlack);
+  removeListener(changeToRandomRGB);
+  removeListener(changeToBlackShades);
+  addListener(changeToBlack);
 })
 
 randomRgbBtn.addEventListener('click', () => {
-  clearContainer();
-  produceDivs(squaresNumber, conatiner, changeToRandomRGB);
+  removeListener(changeToBlack);
+  removeListener(changeToBlackShades);
+  addListener(changeToRandomRGB);
 });
 
 blackShadesBtn.addEventListener('click', () => {
-  clearContainer();
-  produceDivs(squaresNumber, conatiner, changeToBlackShades);
+  removeListener(changeToRandomRGB);
+  removeListener(changeToBlack);
+  addListener(changeToBlackShades);
 });
 
 
 function clearContainer() {
   conatiner.innerHTML = null;
+}
+
+function addListener(func) {
+  const containerDivs = document.querySelectorAll('.container div');
+  for(const div of containerDivs) {
+    div.addEventListener('mouseenter', func);
+  }
+}
+
+function removeListener(func) {
+  const containerDivs = document.querySelectorAll('.container div');
+  for(const div of containerDivs) {
+    div.removeEventListener('mouseenter', func);
+  }
 }
 
 function produceDivs(squaresNumber, parentNode, func){
