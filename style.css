@@ -9,6 +9,12 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
+h1 {
+  color: rgb(202, 240, 245);
+  margin-bottom: 15px;
+  border-bottom: 10px solid rgb(202, 240, 245);
+}
+
 main {
   width: 900px;
   margin: 10px auto;
@@ -46,7 +52,7 @@ main {
 }
 
 .element {
-  border: 1px solid gray;
+  border: 1px solid rgba(168, 167, 167, 0.322);
   margin: 0;
   border-collapse: collapse;
 }
